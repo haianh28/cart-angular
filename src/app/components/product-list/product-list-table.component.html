@@ -1,0 +1,19 @@
+<table class="table">
+   <thead>
+      <tr>
+         <th>Imgae</th>
+         <th>Name</th>
+         <th>Unit Price</th>
+         <th>Units In Stock</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr *ngFor="let list of products">
+         <td class="align middle">
+            <img src="{{list.image}}" height="50px" /></td>
+         <td class="align middle">{{list.name}}</td>
+         <td class="align middle">{{list.unitPrice}}</td>
+         <td class="align middle">{{list.unitsInStock}}</td>
+      </tr>
+   </tbody>
+</table>
